@@ -60,9 +60,9 @@ $(function(){
   var $header = $('.project-header'),
       socialbuttons = 
         '<ul class="social-media-list right">' +
-        '  <li><a class="" href="http://facebook.com/grfwd" target="_blank"><img src="../../images/social-facebook.gif"></a></li>' +
-        '  <li><a class="" href="http://instagram.com/grfwd" target="_blank"><img src="../../images/social-instagram.gif"></a></li>' +
-        '  <li><a class="" href="http://twitter.com/grfwd" target="_blank"><img src="../../images/social-twitter.gif"></a></li>' +
+        '  <li><a class="" href="http://facebook.com/grfwd" target="_blank"><img src="images/social-facebook.gif"></a></li>' +
+        '  <li><a class="" href="http://instagram.com/grfwd" target="_blank"><img src="images/social-instagram.gif"></a></li>' +
+        '  <li><a class="" href="http://twitter.com/grfwd" target="_blank"><img src="images/social-twitter.gif"></a></li>' +
         '</ul>';
 
   if (version === 3) {
