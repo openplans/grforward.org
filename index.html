@@ -10,9 +10,10 @@
 
   <meta charset="utf-8">
   <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"queueTime":8,"beacon":"beacon-2.newrelic.com","applicationTime":259,"licenseKey":"c6c094571b","transactionName":"MgMDYUIHWRVZBhYLVgtJJ0BeBUMPVwtNElUECANaSDlCDxYTCwdOFlwxR18MUgVMNQMFXDMPBEI=","errorBeacon":"bam.nr-data.net","applicationID":"2483395","agent":"js-agent.newrelic.com/nr-476.min.js"}</script>
-  
+  <script src="static/scripts/components-base.min.js"></script>
+
   <meta name="description" content="">
-  
+
   <meta name="author" content="OpenPlans">
 
   <!-- Twitter -->
@@ -28,19 +29,19 @@
 
   <!--  Mobile Viewport Fix -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  
+
   <link rel="icon" href="favicon.ico">
   <link rel="shortcut icon" href="favicon.ico">
-  
+
   <!-- Google Web Fonts -->
   <link href='//fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
-  
+
   <link rel="stylesheet" href="static/styles/components.min.css" />
   <link rel="stylesheet" href="static/styles/style.min.css" type="text/css" />
   <link rel="stylesheet" href="static/styles/custom.css">
-  
+
   <script src="static/scripts/modernizr.min.js"></script>
-  
+
 </head>
 <body>
 
@@ -291,7 +292,7 @@
                     <p class="text-large tiny-margin-bottom">Please join your neighbors at the meetings in your area. Your voice is important!</p>
                     <a href="#section-timeline-2" class="button large radius"><small style="display:block;font-weight:normal;">VIEW THE TIMELINE TO</small>Find A Meeting Near You</a>
                     <p class="text-large tiny-margin-bottom">Do you live or work in downtown Grand Rapids? Please take a few minutes to complete the GR Forward survey!</p>
-                    <a href="https://openplans.typeform.com/to/yWWQdL" class="button large less-padding radius">I live Downtown</a> 
+                    <a href="https://openplans.typeform.com/to/yWWQdL" class="button large less-padding radius">I live Downtown</a>
                     <a href="https://openplans.typeform.com/to/EQ494E" class="button large less-padding radius">I work Downtown</a>
                     <p><a href="http://map.grforward.org/"><img src="images/map-launch-img.jpg"></a></p>
                   </div>
@@ -358,14 +359,20 @@
                   <a href="#" class="button small tertiary radius less-padding no-margin-bottom tag-btn">West Grand</a>
                 </p>
                 <a href="#" class="show-more-past-events button small round less-padding">&nbsp;Show Older Events&nbsp;</a>
+
                 <ol class="event-list no-bullet some-margin-top">
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-downtown-steering-committee" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Downtown Steering Committee</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-04-03T16:00:00Z">April 3, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content"><ul><li><a href="https://dl.dropbox.com/s/8wiaqa53hg1qubl/Downtown%20Plan%20Steering%20Committee%20Description.pdf?dl=0">Downtown Plan Steering Committee Description</a>, including: Overview,&nbsp;Committee Responsibilities, Schedule, Committee Roster<br></li><li><a href="https://dl.dropbox.com/s/18lxdmey0pspvh5/140403_DowntownSteeringCommittee_April3.pdf?dl=0">Presentation</a><br></li></ul></div>
+                        <div class="event-description project-text-content">
+                          <ul>
+                            <li><a href="https://dl.dropbox.com/s/8wiaqa53hg1qubl/Downtown%20Plan%20Steering%20Committee%20Description.pdf?dl=0">Downtown Plan Steering Committee Description</a>, including: Overview,&nbsp;Committee Responsibilities, Schedule, Committee Roster<br></li>
+                            <li><a href="https://dl.dropbox.com/s/18lxdmey0pspvh5/140403_DowntownSteeringCommittee_April3.pdf?dl=0">Presentation</a><br></li>
+                          </ul>
+                        </div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -376,21 +383,20 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-river-restoration-steering-committee" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">River Restoration Steering Committee</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-04-17T16:00:00Z">April 17, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
                         <div class="event-description project-text-content">
-                          2:00pm – 3:30pm&nbsp;<br>Grand Valley Metro Council Main Conference Room 678&nbsp;<br>Front Avenue NW, Suite 200<br>
+                          2:00pm – 3:30pm&nbsp;<br>Grand Valley Metro Council
+                          Main Conference Room
+                          678&nbsp;<br>Front Avenue NW, Suite 200
+                          <br>
                           <ul>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/fgq94ku2xxq075m/River%20Restoration%20Steering%20Committee%20Agenda%204-17.pdf?dl=0">Meeting agenda</a><br>
-                            </li>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/rbpfwpe5lry9kdh/April%2017%20Steering%20Committee%20Meeting.pptx.pdf?dl=0">Presentation</a>
-                            </li>
+                            <li><a href="https://dl.dropbox.com/s/fgq94ku2xxq075m/River%20Restoration%20Steering%20Committee%20Agenda%204-17.pdf?dl=0">Meeting agenda</a><br></li>
+                            <li><a href="https://dl.dropbox.com/s/rbpfwpe5lry9kdh/April%2017%20Steering%20Committee%20Meeting.pptx.pdf?dl=0">Presentation</a></li>
                           </ul>
                         </div>
                       </div>
@@ -403,17 +409,15 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-downtown-steering-committee-2" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Downtown Steering Committee</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-05-08T16:00:00Z">May 8, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
                         <div class="event-description project-text-content">
                           <ul>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/4h7g7j7s55ohkj2/140508_DowntownSteeringCommittee_May_8.pdf?dl=0">Presentation</a><br>
-                            </li>
+                            <li><a href="https://dl.dropbox.com/s/4h7g7j7s55ohkj2/140508_DowntownSteeringCommittee_May_8.pdf?dl=0">Presentation</a><br></li>
                           </ul>
                         </div>
                       </div>
@@ -426,20 +430,16 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-river-corridor-plan-steering-committee-presentat" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">River Corridor Plan Steering Committee</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-06-05T16:00:00Z">June 5, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
                         <div class="event-description project-text-content">
                           <ul>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/apkj9paktrso132/River%20Steering%20Commitee%20Meeting%20%25231%20Agenda%2006%2005%2014-%20FINAL.pdf?dl=0">Meeting agenda</a><br>
-                            </li>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/7tlm2rh4qfzv253/140605_RCPSC_Meeting%201_June5.pdf?dl=0">Presentation</a><br>
-                            </li>
+                            <li><a href="https://dl.dropbox.com/s/apkj9paktrso132/River%20Steering%20Commitee%20Meeting%20%25231%20Agenda%2006%2005%2014-%20FINAL.pdf?dl=0">Meeting agenda</a><br></li>
+                            <li><a href="https://dl.dropbox.com/s/7tlm2rh4qfzv253/140605_RCPSC_Meeting%201_June5.pdf?dl=0">Presentation</a><br></li>
                           </ul>
                         </div>
                       </div>
@@ -452,18 +452,16 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-river-corridor-plan-steering-committee-river-tou" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">River Corridor Plan Steering Committee - River Tour</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-06-11T16:00:00Z">June 11, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
                         <div class="event-description project-text-content">
                           1:30 p.m. – 5:00 p.m.<br>
                           <ul>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/cds72gfsvlij9xq/Committee%20Agenda%20June%2011th%20-%20Tour%20de%20Grand%20FINAL.pdf?dl=0">Agenda</a>
-                            </li>
+                            <li><a href="https://dl.dropbox.com/s/cds72gfsvlij9xq/Committee%20Agenda%20June%2011th%20-%20Tour%20de%20Grand%20FINAL.pdf?dl=0">Agenda</a></li>
                           </ul>
                         </div>
                       </div>
@@ -476,21 +474,19 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-grand-river-restoration-steering-committee-2" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Grand River Restoration Steering Committee</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-06-23T16:00:00Z">June 23, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
                         <div class="event-description project-text-content">
-                          3:30pm – 5:00pm&nbsp;<br>Grand Valley Metro Council Main Conference Room 678 Front Avenue NW, Suite 200 Grand Rapids, MI. 49504<br>
+                          3:30pm – 5:00pm&nbsp;<br>Grand Valley Metro Council Main Conference Room
+                          678 Front Avenue NW, Suite 200
+                          Grand Rapids, MI. 49504<br>
                           <ul>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/liuin7vpao2iqlt/River%20Restoration%20Steering%20Committee%20Agenda%2006-23-14.pdf?dl=0">Agenda</a><br>
-                            </li>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/3mvmo1ymiui1lbw/June%2023%20Steering%20Committee%20Meeting.pptx.pdf?dl=0">Presentation</a><br>
-                            </li>
+                            <li><a href="https://dl.dropbox.com/s/liuin7vpao2iqlt/River%20Restoration%20Steering%20Committee%20Agenda%2006-23-14.pdf?dl=0">Agenda</a><br></li>
+                            <li><a href="https://dl.dropbox.com/s/3mvmo1ymiui1lbw/June%2023%20Steering%20Committee%20Meeting.pptx.pdf?dl=0">Presentation</a><br></li>
                           </ul>
                         </div>
                       </div>
@@ -503,17 +499,15 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-downtown-steering-committee-3" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Downtown Steering Committee</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-07-17T16:00:00Z">July 17, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
                         <div class="event-description project-text-content">
                           <ul>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/u6ws84fyly209pv/140717_DowntownSteeringCommittee_July17.pdf?dl=0">Presentation</a><br>
-                            </li>
+                            <li><a href="https://dl.dropbox.com/s/u6ws84fyly209pv/140717_DowntownSteeringCommittee_July17.pdf?dl=0">Presentation</a><br></li>
                           </ul>
                         </div>
                       </div>
@@ -526,17 +520,15 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-river-corridor-plan-steering-committee" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">River Corridor Plan Steering Committee</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-07-17T16:00:00Z">July 17, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
                         <div class="event-description project-text-content">
                           <ul>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/gqnc8n92akwaq6w/140717_RCPSC_Meeting%202_July17.pdf?dl=0">Presentation</a><br>
-                            </li>
+                            <li><a href="https://dl.dropbox.com/s/gqnc8n92akwaq6w/140717_RCPSC_Meeting%202_July17.pdf?dl=0">Presentation</a><br></li>
                           </ul>
                         </div>
                       </div>
@@ -549,24 +541,18 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-river-corridor-plan-steering-committee-2" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">River Corridor Plan Steering Committee</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-08-07T16:00:00Z">August 7, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
                         <div class="event-description project-text-content">
                           3:00 p.m. – 5:00 p.m.<br>
                           <ul>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/8vn1s64cmd079gk/RCPSC%20August%207th%20Committee%20Agenda.pdf?dl=0">Agenda</a><br>
-                            </li>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/9cdh5s2u0u8ke4k/140807_RCPSC_Meeting%203_August7.pdf?dl=0">Presentation</a><br>
-                            </li>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/81oxcat7gkn40gt/RCPSC%20Roles%20and%20Responsibilities.pdf?dl=0">Committee roles and responsibilities</a><br>
-                            </li>
+                            <li><a href="https://dl.dropbox.com/s/8vn1s64cmd079gk/RCPSC%20August%207th%20Committee%20Agenda.pdf?dl=0">Agenda</a><br></li>
+                            <li><a href="https://dl.dropbox.com/s/9cdh5s2u0u8ke4k/140807_RCPSC_Meeting%203_August7.pdf?dl=0">Presentation</a><br></li>
+                            <li><a href="https://dl.dropbox.com/s/81oxcat7gkn40gt/RCPSC%20Roles%20and%20Responsibilities.pdf?dl=0">Committee roles and responsibilities</a><br></li>
                           </ul>
                         </div>
                       </div>
@@ -579,21 +565,19 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-grand-river-restoration-steering-committee-3" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Grand River Restoration Steering Committee </a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-08-15T16:00:00Z">August 15, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
                         <div class="event-description project-text-content">
-                          1:30 pm – 3:30 pm&nbsp;<br>Grand Valley Metro Council Main Conference Room 678 Front Avenue NW, Suite 200 Grand Rapids, MI. 49504 <br>
+                          1:30 pm – 3:30 pm&nbsp;<br>Grand Valley Metro Council Main Conference Room
+                          678 Front Avenue NW, Suite 200
+                          Grand Rapids, MI. 49504 <br>
                           <ul>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/5uthruaefy5xpnl/River%20Restoration%20Steering%20Committee%20Agenda%2008-15-14.pdf?dl=0">Agenda</a><br>
-                            </li>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/gu3hj6xnuu7pusp/August%2015th%20Steering%20Committee%20Meeting%20Powerpoint.pptx.pdf?dl=0">Presentation</a><br>
-                            </li>
+                            <li><a href="https://dl.dropbox.com/s/5uthruaefy5xpnl/River%20Restoration%20Steering%20Committee%20Agenda%2008-15-14.pdf?dl=0">Agenda</a><br></li>
+                            <li><a href="https://dl.dropbox.com/s/gu3hj6xnuu7pusp/August%2015th%20Steering%20Committee%20Meeting%20Powerpoint.pptx.pdf?dl=0">Presentation</a><br></li>
                           </ul>
                         </div>
                       </div>
@@ -606,17 +590,15 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-downtown-steering-committee-4" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Downtown Steering Committee</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-09-18T16:00:00Z">September 18, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
                         <div class="event-description project-text-content">
                           <ul>
-                            <li>
-                              <a href="https://www.dropbox.com/s/gcaye7nwnep04cy/DowntownSteeringCommittee_Sep18_FINAL_2.ppt?dl=0">Presentation</a><br>
-                            </li>
+                            <li><a href="https://www.dropbox.com/s/gcaye7nwnep04cy/DowntownSteeringCommittee_Sep18_FINAL_2.ppt?dl=0">Presentation</a><br></li>
                           </ul>
                         </div>
                       </div>
@@ -629,27 +611,20 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-grand-river-restoration-steering-committee-4" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Grand River Restoration Steering Committee</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-09-17T15:00:00Z">September 18th, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
                         <div class="event-description project-text-content">
-                          Thursday, September 18th, 2014 3:00 p.m. – 5:00 p.m.<br> Seidman College of Business. 50 Front Ave SW, Grand Rapids, MI 49504<br>
+                          Thursday, September 18th, 2014 3:00 p.m. – 5:00 p.m.<br>
+                          Seidman College of Business. 50 Front Ave SW, Grand Rapids, MI 49504<br>
                           <ul>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/6h7ioesgkmsy5z9/September%2016th%20Steering%20Committee%20Meeting%20Powerpoint.pdf?dl=0">Slides from the meeting</a>
-                            </li>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/252d0panlj6zhv9/RCPSC%20September%2018th%20Committee%20Agenda.docx?dl=0">Agenda</a>
-                              </li>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/0s589bdslscd2hz/Guiding%20Principles.docx?dl=0">Guiding Principles document</a>
-                            </li>
-                            <li>
-                              <a href="https://dl.dropbox.com/s/3tfztj7ow9lrbel/Meeting%20Packet%20Final.docx?dl=0">Meeting packet</a>, including Guiding Principles, Organizational models, Schedule, Minutes
-                            </li>
+                            <li><a href="https://dl.dropbox.com/s/6h7ioesgkmsy5z9/September%2016th%20Steering%20Committee%20Meeting%20Powerpoint.pdf?dl=0">Slides from the meeting</a></li>
+                            <li><a href="https://dl.dropbox.com/s/252d0panlj6zhv9/RCPSC%20September%2018th%20Committee%20Agenda.docx?dl=0">Agenda</a></li>
+                            <li><a href="https://dl.dropbox.com/s/0s589bdslscd2hz/Guiding%20Principles.docx?dl=0">Guiding Principles document</a></li>
+                            <li><a href="https://dl.dropbox.com/s/3tfztj7ow9lrbel/Meeting%20Packet%20Final.docx?dl=0">Meeting packet</a>, including Guiding Principles, Organizational models, Schedule, Minutes</li>
                           </ul>
                         </div>
                       </div>
@@ -662,14 +637,14 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-black-hills-mini-series-meeting-1" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Black Hills Mini-Series Meeting #1</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-11-13T17:00:00Z">November 13, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Black Hills;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Black Hills Community Center <br>1035 Godfrey Ave<br>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Black Hills Community Center
+                          <br>1035 Godfrey Ave<br>
                         </div>
                       </div>
                       <div class="medium-5 columns">
@@ -681,14 +656,14 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-west-grand-mini-series-meeting-1" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">West Grand Mini-Series Meeting #1</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-11-17T17:00:00Z">November 17, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="West Grand;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Harrison Park Elementary (Cafeteria) <br>1440 Davis Ave NW<br>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Harrison Park Elementary (Cafeteria)
+                          <br>1440 Davis Ave NW<br>
                         </div>
                       </div>
                       <div class="medium-5 columns">
@@ -700,15 +675,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-northwest-regional-public-meeting" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Northwest Regional Public Meeting</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-11-18T17:00:00Z">November 18, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Union High School (Cafeteria/Media Center)<br>1800 Tremont Blvd. NW
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Union High School (Cafeteria/Media Center)<br>1800 Tremont Blvd. NW</div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -719,15 +692,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-southeast-regional-public-meeting" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Southeast Regional Public Meeting</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-11-19T17:00:00Z">November 19, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Ottawa Hills High School (Mall Area)<br>2055 Rosewood SE
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Ottawa Hills High School (Mall Area)<br>2055 Rosewood SE</div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -738,14 +709,14 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-roosevelt-park-mini-series-meeting-1" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Roosevelt Park Mini-Series Meeting #1</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-12-02T17:00:00Z">December 2, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Roosevelt Park;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br><br>Cesar E. Chavez Elementary School (Cafeteria/Gym) <br>1205 Grandville Ave SW<br>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br><br>Cesar E. Chavez Elementary School (Cafeteria/Gym)
+                          <br>1205 Grandville Ave SW<br>
                         </div>
                       </div>
                       <div class="medium-5 columns">
@@ -757,13 +728,14 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event">
+                  <li class="event">
                     <span id="event-creston-mini-series-meeting-1" class="event-anchor"></span>
-                    <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Creston Mini-Series Meeting #1 (December 3, 2014)</a></h4>
-                    <div class="row event-details hide">
+                    <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Creston Mini-Series Meeting #1</a></h4>
+                    <h5 class="event-datetime subheader" data-datetime="2014-12-03T17:00:00Z">December 2, 2014</h5>
+                    <div class="row event-details hide" data-tags="Creston;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Riverside Middle School (Cafeteria) <br>265 Eleanor St NE<br>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Riverside Middle School (Cafeteria)
+                          <br>265 Eleanor St NE<br>
                         </div>
                       </div>
                       <div class="medium-5 columns">
@@ -775,15 +747,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-northeast-regional-public-meeting" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Northeast Regional Public Meeting</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-12-04T17:00:00Z">December 4, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>City High Middle School (Cafeteria)<br>1720 Plainfield NE
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>City High Middle School (Cafeteria)<br>1720 Plainfield NE</div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -794,15 +764,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-heritage-hill-mini-series-meeting-1" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Heritage Hill Mini-Series Meeting #1</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-12-09T17:00:00Z">December 9, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Heritage Hill;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          5:30pm - 7:00pm<br>Cornerstone Church<br>48 Lafayette SE
-                        </div>
+                        <div class="event-description project-text-content">5:30pm - 7:00pm<br>Cornerstone Church<br>48 Lafayette SE</div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -813,15 +781,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event past-event hide">
+                  <li class="event">
                     <span id="event-swan-jban-mini-series-meeting-1" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">SWAN / JBAN Mini-Series Meeting #1</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2014-12-10T17:00:00Z">December 10, 2014</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="SWAN/JBAN;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Sibley Elementary (Cafeteria/Gym)<br>943 Sibley NW
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Sibley Elementary (Cafeteria/Gym)<br>943 Sibley NW</div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -832,14 +798,14 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event">
+                  <li class="event">
                     <span id="event-roosevelt-park-mini-series-meeting-2" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Roosevelt Park Mini-Series Meeting #2</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-01-08T17:00:00Z">January 8, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Roosevelt Park;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br><br>Cesar E. Chavez Elementary School (Cafeteria/Gym) <br>1205 Grandville Ave SW<br>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br><br>Cesar E. Chavez Elementary School (Cafeteria/Gym)
+                          <br>1205 Grandville Ave SW<br>
                         </div>
                       </div>
                       <div class="medium-5 columns">
@@ -851,15 +817,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event">
+                  <li class="event">
                     <span id="event-belknap-mini-series-meeting-1" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Belknap Mini-Series Meeting #1</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-01-13T17:00:00Z">January 13, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Belknap;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:00pm - 7:00pm<br>Belknap Commons<br>751 Lafayette NE<br><br><br>(Dates for other Belknap community meetings TBD)
-                        </div>
+                        <div class="event-description project-text-content">6:00pm - 7:00pm<br>Belknap Commons<br>751 Lafayette NE<br><br><br>(Dates for other Belknap community meetings TBD)</div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -870,15 +834,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event">
+                  <li class="event">
                     <span id="event-black-hills-mini-series-meeting-2" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Black Hills Mini-Series Meeting #2</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-01-15T17:00:00Z">January 15, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Black Hills;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Black Hills Community Center <br>1035 Godfrey Ave<br>
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Black Hills Community Center <br>1035 Godfrey Ave<br></div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -889,14 +851,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event hide"><span id="event-creston-mini-series-meeting-2" class="event-anchor"></span>
+                  <li class="event">
+                    <span id="event-creston-mini-series-meeting-2" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Creston Mini-Series Meeting #2</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-01-21T17:00:00Z">January 21, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Creston;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Riverside Middle School (Cafeteria) <br>265 Eleanor St NE<br>
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Riverside Middle School (Cafeteria) <br>265 Eleanor St NE<br></div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -907,14 +868,14 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event hide">
+                  <li class="event">
                     <span id="event-west-grand-mini-series-meeting-2" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">West Grand Mini-Series Meeting #2</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-01-26T17:00:00Z">January 26, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="West Grand;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Harrison Park Elementary (Cafeteria) <br>1440 Davis Ave NW<br>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Harrison Park Elementary (Cafeteria)
+                          <br>1440 Davis Ave NW<br>
                         </div>
                       </div>
                       <div class="medium-5 columns">
@@ -926,15 +887,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event hide">
+                  <li class="event">
                     <span id="event-swan-jban-mini-series-meeting-2" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">SWAN / JBAN Mini-Series Meeting #2</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-01-28T17:00:00Z">January 28, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="SWAN/JBAN;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Sibley Elementary (Cafeteria/Gym)<br>943 Sibley NW
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Sibley Elementary (Cafeteria/Gym)<br>943 Sibley NW</div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -945,15 +904,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event hide">
+                  <li class="event">
                     <span id="event-heritage-hill-mini-series-meeting-2" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Heritage Hill Mini-Series Meeting #2</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-02-10T17:00:00Z">February 10, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Heritage Hill;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          5:30pm - 7:00pm<br>Cornerstone Church<br>48 Lafayette SE
-                        </div>
+                        <div class="event-description project-text-content">5:30pm - 7:00pm<br>Cornerstone Church<br>48 Lafayette SE</div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -964,15 +921,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event hide">
+                  <li class="event">
                     <span id="event-swan-jban-mini-series-meeting-3" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">SWAN / JBAN Mini-Series Meeting #3</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-02-18T17:00:00Z">February 18, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="SWAN/JBAN;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Sibley Elementary (Cafeteria/Gym)<br>943 Sibley NW
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Sibley Elementary (Cafeteria/Gym)<br>943 Sibley NW</div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -983,15 +938,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event hide">
+                  <li class="event">
                     <span id="event-roosevelt-park-mini-series-meeting-3" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Roosevelt Park Mini-Series Meeting #3</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-02-19T17:00:00Z">February 19, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Roosevelt Park;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br><br>Cesar E. Chavez Elementary School (Cafeteria/Gym) <br>1205 Grandville Ave SW<br>
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br><br>Cesar E. Chavez Elementary School (Cafeteria/Gym) <br>1205 Grandville Ave SW<br></div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -1002,15 +955,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event hide">
+                  <li class="event">
                     <span id="event-creston-mini-series-meeting-3" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Creston Mini-Series Meeting #3</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-02-23T17:00:00Z">February 23, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Creston;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Riverside Middle School (Cafeteria) <br>265 Eleanor St NE<br>
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Riverside Middle School (Cafeteria) <br>265 Eleanor St NE<br></div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -1021,15 +972,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event hide">
+                  <li class="event">
                     <span id="event-west-grand-mini-series-meeting-3" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">West Grand Mini-Series Meeting #3</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-02-23T17:00:00Z">February 23, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="West Grand;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Harrison Park Elementary (Cafeteria)&nbsp;<br>1440 Davis Ave NW
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Harrison Park Elementary (Cafeteria)&nbsp;<br>1440 Davis Ave NW</div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -1040,15 +989,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event hide">
+                  <li class="event">
                     <span id="event-black-hills-mini-series-meeting-3" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Black Hills Mini-Series Meeting #3</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-02-26T17:00:00Z">February 26, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Black Hills;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          6:30pm - 8:00pm<br>Black Hills Community Center <br>1035 Godfrey Ave<br>
-                        </div>
+                        <div class="event-description project-text-content">6:30pm - 8:00pm<br>Black Hills Community Center <br>1035 Godfrey Ave<br></div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -1059,15 +1006,13 @@
                       </div>
                     </div>
                   </li>
-                  <li class="event future-event hide">
+                  <li class="event">
                     <span id="event-heritage-hill-mini-series-meeting-3" class="event-anchor"></span>
                     <h4 class="event-title no-margin-top"><a href="#" class="show-event-details">Heritage Hill Mini-Series Meeting #3</a></h4>
                     <h5 class="event-datetime subheader" data-datetime="2015-03-10T16:00:00Z">March 10, 2015</h5>
-                    <div class="row event-details hide">
+                    <div class="row event-details hide" data-tags="Heritage Hill;">
                       <div class="medium-7 columns">
-                        <div class="event-description project-text-content">
-                          5:30pm - 7:00pm<br>Cornerstone Church<br>48 Lafayette SE
-                        </div>
+                        <div class="event-description project-text-content">5:30pm - 7:00pm<br>Cornerstone Church<br>48 Lafayette SE</div>
                       </div>
                       <div class="medium-5 columns">
                         <div class="attachments-region">
@@ -1079,6 +1024,7 @@
                     </div>
                   </li>
                 </ol>
+
                 <a href="#" class="show-more-future-events button small round less-padding">&nbsp;Show More Events&nbsp;</a>
               </div>
             </div>
@@ -1169,7 +1115,7 @@
                                 if (script.readyState && script.onload!==null){
                                     script.onreadystatechange= function () {
                                           if (this.readyState == 'complete') mce_preload_check();
-                                    }    
+                                    }
                                 }
                             }
 
@@ -1243,7 +1189,7 @@
                                                                   this.value = '';
                                          } else {
                                              if (/\[day\]/.test(fields[0].name)){
-                                                                         this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;                 
+                                                                         this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
                                              } else {
                                                                          this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
                                                                      }
@@ -1269,7 +1215,7 @@
                                                                 });
                                                         });
                                                     return mce_validator.form();
-                                                }, 
+                                                },
                                                 success: mce_success_cb
                                             };
                                   $('#mc-embedded-subscribe-form').ajaxForm(options);
@@ -1310,7 +1256,7 @@
                                     try{
                                         if (index== -1){
                                             $('#mce-'+resp.result+'-response').show();
-                                            $('#mce-'+resp.result+'-response').html(msg);            
+                                            $('#mce-'+resp.result+'-response').html(msg);
                                         } else {
                                             err_id = 'mce_tmp_error_msg';
                                             html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
@@ -1392,8 +1338,6 @@
     </div>
   </div>
 
-  <script src="static/scripts/components-base.min.js"></script>
-
   <script>
     $(document).foundation();
   </script>
@@ -1402,7 +1346,7 @@
 
   <!-- <script>Swag.registerHelpers(Handlebars);</script> -->
 
-  <script src="static/scripts/app.min.js"></script>
+  <script src="static/scripts/static-app.min.js"></script>
 
   <script src="static/scripts/custom.js"></script>
 
@@ -1432,8 +1376,8 @@
     // attached to the request, which takes into account the domain mapping.
     ga('send', 'pageview', '/GrandRapids/grfwd/' + window.location.search);
   </script>
-  
 
-  
+
+
 </body>
 </html>
